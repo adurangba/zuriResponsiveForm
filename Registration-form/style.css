@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(images/bg-intro-desktop.png) #ff7878;
+    background-blend-mode: multiply;
+    color: #fff;
+    padding: 0 10% 0 10%;
+}
+div.code{
+    width: 50%;
+}
+h2{
+    font-size: 2.9em;
+    font-weight: 500;
+}
+h2 span{
+    display: block;
+    margin-bottom: 2%;
+}
+div.code p{
+    line-height:1.5;
+    font-size: 1.1em;
+}
+div.right{
+    width: 50%;
+}
+div.try{
+    background-color: #5d54a3;
+    cursor: pointer;
+    padding: 2% 10%;
+    border-radius: 8px;
+    box-shadow: 0px 5px 3px #0000003f;
+    margin: 0 0 2%;
+}
+div.try span{
+    font-weight: bold;
+    text-align: center;
+}
+form{
+    background-color: #ffffff;
+    padding: 5%;
+    border-radius: 10px;
+    box-shadow: 0px 5px 3px #0000003f;
+}
+input{
+    width: 95%;
+    padding: 3% 5%;
+    font-size: 1em;
+    margin-bottom: 2%;
+    color:#605692;
+    border-radius: 5px;
+}
+input:active{
+    border-color: #5d54a3;
+}
+input[type="submit"]{
+    background-color: #37cc8a;
+    border:0;
+    color: #fff;
+    transition: 300ms ease-in-out;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #09da7c;
+    transition: 3s ease-in-out;
+}
+p.end{
+    color: #0f0f0f;
+    font-size: .9em;
+}
+p.end span{
+    color:#d37d7e;
+    cursor: pointer;
+}
+p.end span:hover{
+    color:#d3373a;
+}
+
+/* Mobile Responsiveness @ 375px */
+
+@media only screen and (max-width: 375px) {
+    body{
+        height: fit-content;
+        background:url(images/bg-intro-mobile.png) #ff7878 ;
+        flex-direction: column;
+        padding: 4% 4% 10% 4%;
+        text-align: center;
+    }
+    .code{
+        padding: 100px 0;
+        min-width: 97%;
+    }
+    h2{
+        font-size: 2em;
+    }
+    .code p{
+        text-align: center;
+    }
+    .right{
+        min-width:98%;
+        padding: 0px 0px 0px;
+    }
+    .try{
+        padding: 4% 10%;
+        font-size: 1.2em;
+        font-weight: normal;
+    }
+    
+}
+
+
+
